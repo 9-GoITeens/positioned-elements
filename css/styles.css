@@ -1,0 +1,195 @@
+:root {  
+    --accent-color: #2196f3;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h3,
+h2,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: #ffffff;
+}
+
+/* < !-- Шапка сайта --> */
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.top-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.border {
+padding-top: 24px;
+padding-bottom: 25px;
+background-color: rgba(182, 228, 213, 0.688);
+}
+
+/* logo */
+.logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 32px;
+line-height: 1.19;
+color: #e73d3d;
+}
+
+.logo-interactive {
+color: black;
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+
+.top-conection {
+    display: flex;
+    margin-left: 94px;
+}
+
+.top-conection>.item:not(:last-child) {
+    margin-right: 55px;
+}
+ 
+
+.link.current {
+    color: var(--accent-color);
+}
+
+.nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: white;
+}
+
+.banner{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    padding: 250px 0;
+    background-image: 
+     url(../img/pexels-stefan-stefancik-92380.jpg);
+    background-repeat: no-repeat;
+    background-color: bisque;
+    background-size: cover;
+    background-position:center; 
+    background-attachment:fixed;
+}
+
+
+.banner-content{
+max-width: 500px;
+padding: 20px;
+margin: auto;
+text-align: center;
+background-color: rgba(155, 255, 255, 0.5);
+border: 10px solid rgba(255, 255, 255, 0.5);
+background-clip: padding-box;
+
+}
+
+.art{
+    display: flex;
+}
+
+.img{
+    padding-right: 20px;
+}
+
+.page-title, .description{
+font-size: 14px;
+color: cornflowerblue;
+}
+
+
+.pets-list{
+display: flex;
+flex-wrap: wrap;
+margin-top: -30px;
+ margin-left: -30px;
+}
+
+.pets-item{
+width: calc((100% - 30px * 4) / 4);
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.pets-item-img{
+width: 100%;
+height: 230px;
+}
+
+/*  */
+
+.services-item:not(:last-child){
+    margin-bottom: 40px;
+}
+
+
+.services-link{
+display: flex;
+align-items: center;
+}
+
+.services-link:hover{
+    color: red;
+}
+
+.services-link:hover::before{
+    background-color: lightcoral;
+}
+
