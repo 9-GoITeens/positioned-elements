@@ -67,9 +67,15 @@ body {
 }
 
 .border {
+position: fixed;
+/* width: 100%; */
+left: 0;
+right: 0;
+top: 0;
+z-index: 50;
 padding-top: 24px;
 padding-bottom: 25px;
-background-color: rgba(182, 228, 213, 0.688);
+background-color: rgba(182, 228, 213, 0.5);
 }
 
 /* logo */
@@ -131,6 +137,9 @@ color: black;
 
 
 .banner-content{
+position: relative;
+top: 50px;
+left: 50px;
 max-width: 500px;
 padding: 20px;
 margin: auto;
@@ -138,15 +147,24 @@ text-align: center;
 background-color: rgba(155, 255, 255, 0.5);
 border: 10px solid rgba(255, 255, 255, 0.5);
 background-clip: padding-box;
+/* opacity: 0.5; */
+}
 
+.relative{
+    position: relative;
+ 
 }
 
 .art{
     display: flex;
+    height: 600px;
+    overflow: auto;
+    /* background-color: bisque; */
 }
 
 .img{
-   
+   position: sticky;
+   top: 50%;
     object-fit: cover;
     object-position: top;
     padding-right: 20px;
@@ -154,8 +172,9 @@ background-clip: padding-box;
 
 .page-title, .description{
 font-size: 14px;
-color: cornflowerblue;
+color: black;
 }
+
 
 
 .pets-list{
@@ -171,6 +190,7 @@ margin-top: 30px;
 margin-left: 30px;
 }
 
+
 .pets-item-img{
 object-fit: cover;
 object-position: top;
@@ -178,6 +198,39 @@ width: 100%;
 height: 230px;
 }
 
+.content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 235, 215, 0.628);
+    z-index: 1;
+}
+
+.pets-item{
+    overflow: hidden;
+    position: relative;
+    background-color: red;
+}
+
+::-webkit-scrollbar {
+    width: 100px;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.pets-item::before{
+    position: absolute;
+    right: -25px;
+    bottom: -25px;
+    content: " ";
+   display: block;
+    background-image: url(../img/icons8-лента-за-первое-место-48.png);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+}
 
 
 /*  */
